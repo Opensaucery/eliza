@@ -1,0 +1,20 @@
+<div class="canvas">
+        <div>
+            <h1 class="logo"><a href="/index.html">ELIZA GEARTY</h1></a>
+        </div>
+        <div class="menuBar">
+            <div class="menuItem"><a href="/index.html">Home</a></div>
+            <div class="menuItem"><a href="/doors.html">On the doors</a></div>
+            <div class="menuItem"><a class="active" href="/theatre.html">Theatre</a></div>
+            <div class="menuItem"><a href="/other.html">Other musings</a></div>
+            </div>
+        <div class="pageDivide"></div>
+ 
+
+<ul class="list-group">
+    {{#each articles}}
+    <li class="list-group-item">{{this.headLine}}: {{this.descrip}}</li>
+    {{/each}}
+</ul>
+
+<a href="/api/articles" class="btn btn-light mt-4">Visit Api</a>
